@@ -1,2 +1,8 @@
 # Boundary-Layer-Program
+Computer Program for the Simulation of Two-dimensional Steady State Boundary Layers in Non-ideal Gas Flows
+
+Dominic Dyon Dijkshoorn, 14-12-2022
+
 This MATLAB computer program solves the two-dimensional steady state boundary layer equations with general fluid properties for compressible flows in the ideal gas or non-ideal gas (departing from ideal gas) regime, adiabatic or including heat transfer for laminar and/or turbulent (algebraic CS-model) flows.
+
+The core of the computer program (method of solution) was taken from one of the FORTRAN programs contained on the DVD enclosed with the book Convective Heat Transfer (2002) by Tuncer Cebeci [3]. The FORTRAN code has been converted to MATLAB code, and improved by adding an omitted coefficient. The simple computer program utilizing calorically perfect ideal gas was extended to include three gas models: calorically perfect ideal gas with constant fluid properties (but with viscosity as function of temperature), thermally perfect (calorically imperfect) ideal gas with fluid properties as function of temperature, and, non-ideal gas retrieving fluid properties with state-of-the-art thermophysical models through FluidProp [5]. The pre-determined point-of-transition method for transition from laminar to turbulent flow was extended with two simple transition prediction methods for air (Wazzan’s and Michel’s method), and a re-laminarisation prediction method (Nash-Webber), also for air (see thesis [1] for more details on these methods). The algebraic turbulence model implemented (CS-model) was extended with a turbulent Prandtl-number model obtained from the book Analysis of Turbulent Boundary Layers (1974) by Cebeci and Smith [4].
