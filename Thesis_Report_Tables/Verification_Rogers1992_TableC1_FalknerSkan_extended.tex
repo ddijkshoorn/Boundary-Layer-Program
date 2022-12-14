@@ -1,0 +1,55 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Verification with Table C-1 from Rogers\cite{rogers1992laminar}: Falkner-Skan wedge flows (adiabatic incompressible nonzero pressure gradient flows with constant fluid properties)
+\begin{threeparttable}
+    \centering
+    \caption{Comparison with tabulated data of the Falkner-Skan wedge flows (adiabatic incompressible similar flows with nonzero constant pressure gradients for calorically perfect ideal gas with constant fluid properties) taken from Rogers\cite{rogers1992laminar} table C-1. The values obtained with the CS-method (CSM) are transformed from the compressible Falkner-Skan transformed y-coordinate with uniform (vertical) grid spacing of $\mathrm{d} \eta = \sqrt{\frac{2C}{m_2 + 1}} 0.0010$ and height of $\eta_{\mathrm{e}} = \sqrt{\frac{2C}{m_2 + 1}} 6.0$ to the Illingworth-Levy coordinates ($\mathrm{d} \eta = 0.0010$ and $\eta_{\mathrm{e}} = 6.0$). Note that separation occurred when the table entry shows 'sep'.}
+    \label{tab:FSFE}
+    \begin{tabular}{S[table-format=-1.7] S[table-format=4.6] S[table-format=1.8] S[table-format=1.7] S[table-format=1.7] S[table-format=1.7] S[table-format=1.7] S[table-format=1.7]}
+        \toprule
+
+        \multicolumn{1}{c}{$\beta$}                               &
+        \multicolumn{1}{c}{$m_2$}                                 &
+        \multicolumn{2}{c}{$f''(0)$}                              &
+        \multicolumn{1}{c}{\textbf{Rogers}}                       &
+        \multicolumn{1}{c}{\textbf{CSM}}                          &
+        \multicolumn{1}{c}{\textbf{Rogers}}                       &
+        \multicolumn{1}{c}{\textbf{CSM}}                          \\
+
+        \multicolumn{1}{c}{}                                      &
+        \multicolumn{1}{c}{}                                      &
+        \multicolumn{1}{c}{\textbf{Rogers}}                       &
+        \multicolumn{1}{c}{\textbf{CSM}}                          &
+        \multicolumn{1}{c}{$I_1$}                                 &
+        \multicolumn{1}{c}{$2 J_{\mathrm{x}}$}                    &
+        \multicolumn{1}{c}{$I_2$}                                 &
+        \multicolumn{1}{c}{$2 J_2$}                               \\
+        \midrule
+
+        % Data
+         2.00       &   1000\tnote{*}  &  1.687218   &  1.686430  &  0.4974331   &  0.4971375  &  0.2307831   &  0.2308703 \\
+         1.60       &   4.000000  &  1.521514   &  1.521514  &  0.5440214   &  0.5435219  &  0.2504147   &  0.2504149 \\
+         1.20       &   1.500000  &  1.335721   &  1.335721  &  0.6068977   &  0.6063982  &  0.2761104   &  0.2761107 \\
+         1.00       &   1.000000  &  1.232588   &  1.232588  &  0.6479002   &  0.6474006  &  0.2923434   &  0.2923435 \\
+         0.80       &   0.666667  &  1.120268   &  1.120268  &  0.698680   &  0.6981803  &  0.3118461   &  0.3118463 \\
+         0.60       &   0.428571  &  0.9958365   &  0.995836  &  0.7639711   &  0.7634719  &  0.3359076   &  0.3359082 \\
+         0.50       &   0.333333  &  0.9276801   &  0.927680  &  0.804584   &  0.8040487  &  0.3502693   &  0.3502704 \\
+         0.40       &   0.250000  &  0.8544213   &  0.854421  &  0.8526334   &  0.8521342  &  0.3666903   &  0.3666909 \\
+         0.30       &   0.176471  &  0.7747546   &  0.774755  &  0.9109929   &  0.9104937  &  0.3857349   &  0.3857355 \\
+         0.20       &   0.111111  &  0.6867083   &  0.686708  &  0.9841576   &  0.9836582  &  0.4082296   &  0.4082300 \\
+         0.10       &   0.052632  &  0.5870354   &  0.587035  &  1.080319   &  1.0798191  &  0.4354562   &  0.4354564 \\
+         0.05       &   0.025641  &  0.5311299   &  0.531130  &  1.141735   &  1.1412355  &  0.4514675   &  0.4514676 \\
+         0       &   0.000000  &  0.4696005   &  0.469600  &  1.216778   &  1.2162767  &  0.469598   &  0.4695969 \\
+         -0.05       &   -0.024390  &  0.4003233   &  0.400324  &  1.312358   &  1.3118547  &  0.4904601   &  0.4904579 \\
+         -0.10       &   -0.047619  &  0.3192698   &  0.319273  &  1.442697   &  1.4421746  &  0.5150439   &  0.5150298 \\
+         -0.14       &   -0.065421  &  0.239736   &  0.239747  &  1.59902   &  1.5953381  &  0.5385607   &  0.5385270 \\
+         -0.16       &   -0.074074  &  0.1907799   &  0.190804  &  1.706649   &  1.7060166  &  0.5521947   &  0.5521346 \\
+         -0.18       &   -0.082569  &  0.1286362   &  0.128709  &  1.871575   &  1.8706901  &  0.567707   &  0.5675744 \\
+         -0.19       &   -0.086758  &  0.08570037   &  0.085884  &  2.006757   &  2.0053041  &  0.5765225   &  0.5762837 \\
+         -0.1988376       &   -0.090429  &  0   &  0.009411  &  2.358848   &  2.3109842  &  0.5854352   &  0.5846335 \\
+        \bottomrule
+
+    \end{tabular}
+    \begin{tablenotes}
+        \item[*] The solution does not converge for $m_2 = \infty$, and therefore $m_2 = 1000$ is taken as approach.
+    \end{tablenotes}
+\end{threeparttable}

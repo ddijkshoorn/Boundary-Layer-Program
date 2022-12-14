@@ -1,0 +1,49 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Verification with Howarths Flow case with Table 8-1 from Cebeci\cite{cebeci1974analysis}: incompressible adiabatic decelarating flow)
+%\begin{table}
+%\begin{sidewaystable}
+\begin{threeparttable}
+    \centering
+    \caption{Comparison with tabulated data of nonsimilar Howarths Flow: incompressible adiabatic decelarating flow (adverse pressure gradient) taken from Cebeci\cite{cebeci1974analysis} table 8-1. All values in compressible Falkner-Skan transformed y-coordinate. Grid used by the CS-method (CSM): uniform (vertical) grid spacing of $\mathrm{d} \eta = 0.0100$ and height of $\eta_{\mathrm{e}} = 9.0$. Note that separation occurred when the table entry shows 'sep'.}
+    \caption{Comparison with tabulated data of nonsimilar Howarths Flow: incompressible adiabatic decelarating flow (adverse pressure gradient) taken from Cebeci\cite{cebeci1974analysis} table 8-1. All values in compressible Falkner-Skan transformed y-coordinate. Grid used by the CS-method (CSM): uniform (vertical) grid spacing of $\mathrm{d} \eta = 0.0100$ and height of $\eta_{\mathrm{e}} = 9.0$. Note that separation occurred when the table entry shows 'sep'.}
+    \label{tab:CT8_1}
+    \begin{tabular}{S[table-format=1.4] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6]}
+        \toprule
+
+        \multicolumn{1}{c}{$\bar{X}$}                               &
+        \multicolumn{1}{c}{$f''(0)$}                                &
+        \multicolumn{5}{c}{$\frac{\tau(0)}{\rho u_{\infty}^2}$}     \\
+
+        \multicolumn{1}{c}{[-]}                                     &
+        \multicolumn{1}{c}{[-]}                                     &
+        \multicolumn{5}{c}{[-]}                                     \\
+        \cmidrule(lr){3-7}
+
+        \multicolumn{1}{c}{}                                        &
+        \multicolumn{2}{c}{CSM}                                     &
+        \multicolumn{1}{c}{Cebeci}                                  &
+        \multicolumn{1}{c}{Howarth}                                 &
+        \multicolumn{1}{c}{Smith-Clutter}                           &
+        \multicolumn{1}{c}{G\"{o}rtler}                             \\
+        \midrule
+
+        % Data
+        0   &   0.332057   &   Inf   &      &        &       &   \\
+        0.1   &   0.312128   &   0.993264   &   0.968524   &   0.968382   &     &  0.968781   \\
+        0.2   &   0.290985   &   0.658951   &   0.626392   &   0.626496   &  0.626249   &  0.626567   \\
+        0.3   &   0.268370   &   0.499428   &   0.462645   &   0.462801   &     &  0.462815   \\
+        0.4   &   0.243998   &   0.395816   &   0.357197   &   0.357442   &  0.357301   &  0.357427   \\
+        0.5   &   0.217477   &   0.317646   &   0.279150   &   0.279307   &     &  0.279611   \\
+        0.6   &   0.188203   &   0.252627   &   0.216119   &   0.216728   &     &  0.217221   \\
+        0.7   &   0.155154   &   0.194132   &   0.161602   &   0.162281   &     &  0.164296   \\
+        0.8   &   0.116256   &   0.137008   &   0.110918   &   0.111369   &  0.111546   &  0.117472   \\
+        0.88   &   0.077135   &   0.087159   &   0.068963   &      &  0.068942   &  0.082980   \\
+        0.9   &   0.065027   &   0.072759   &   0.057228   &   0.057629   &     &  0.074667   \\
+        0.92   &   0.051133   &   0.056668   &   0.044295   &      &  0.045254   &  0.066458   \\
+        0.94   &   0.033815   &   0.037127   &   0.028807   &      &     &  0.058344   \\
+        0.956   &   0.011825   &   0.012889   &   0.009863   &      &     &  0.051917   \\
+        0.9588   &   \multicolumn{1}{c}{sep}   &   \multicolumn{1}{c}{sep}   &   0.001602   &      &   0.006717   &   0.050798   \\
+        \bottomrule
+
+    \end{tabular}
+\end{threeparttable}

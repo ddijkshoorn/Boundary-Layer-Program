@@ -1,0 +1,47 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Comparison of laminar simulation results of the ORCHID nozzle with two different thermophysical models: RefProp and StanMix. Where StanMix is considered as a reference.
+%\begin{table}
+%\begin{sidewaystable}
+\begin{threeparttable}
+    \centering
+    \caption{Comparison of ORCHID laminar simulations with two different thermodynamic models: boundary layer edge properties. Results calculated using StanMix and RefProp. StanMix utilizes the iPRSV, whereas RefProp utilizes unknow industrial standards? StanMix is used here as starting point for convenience, since the fluid property retrieval is much faster, whereas RefProp is thought to be more accurate. Note also that edge properties are the same for laminar or turbulent flow. Static pressure obtained from SU2 CFD simulation second-order convergence is used as input.}
+    \label{tab:coslam}
+    \begin{tabular}{l S[table-format=1.3] S[table-format=1.3] S[table-format=1.3] S[table-format=1.2] S[table-format=1.1] S[table-format=1.1] S[table-format=1.2] S[table-format=1.2] S[table-format=1.2] S[table-format=1.2] S[table-format=1.2] S[table-format=1.2]}
+        \toprule
+
+        \multicolumn{1}{c}{Laminar flow}                  &
+        \multicolumn{1}{c}{$\delta$}                  &
+        \multicolumn{1}{c}{$\delta^*$}         &
+        \multicolumn{1}{c}{$\theta$}                    &
+        \multicolumn{1}{c}{$H$}         &
+        \multicolumn{1}{c}{$\mathrm{Re}_{\mathrm{e}}$}                  &
+        \multicolumn{1}{c}{$\mathrm{Re}_x$}                  &
+        \multicolumn{1}{c}{$\mathrm{Re}_{\theta}$}                &
+        \multicolumn{1}{c}{$C_{\mathrm{f}}$}                    &
+        \multicolumn{1}{c}{$C_{\mathrm{d}}$}                    &
+        \multicolumn{1}{c}{$r$}      &
+        \multicolumn{1}{c}{$c_{\mathrm{w}}$}                    &
+        \multicolumn{1}{c}{$C_{\mathrm{w}}$}                    \\
+        \multicolumn{1}{c}{}                  &
+        \multicolumn{1}{c}{$\times \, 10^{-3} \,$ [m]}                     &
+        \multicolumn{1}{c}{$\times \, 10^{-3} \,$ [m]}                                &
+        \multicolumn{1}{c}{$\times \, 10^{-3} \,$ [m]}                    &
+        \multicolumn{1}{c}{[-]}         &
+        \multicolumn{1}{c}{$\times \, 10^{7} \,$ [1/m]}         &
+        \multicolumn{1}{c}{$\times \, 10^{7} \,$ [-]}         &
+        \multicolumn{1}{c}{$\times \, 10^{3} \,$ [-]}         &
+        \multicolumn{1}{c}{$\times \, 10^{-3} \,$ [-]}         &
+        \multicolumn{1}{c}{$\times \, 10^{-3} \,$ [-]}         &
+        \multicolumn{1}{c}{[-]}         &
+        \multicolumn{1}{c}{[-]}         &
+        \multicolumn{1}{c}{[-]}                      \\
+        \midrule
+
+        % Data
+\multicolumn{1}{l}{\textnormal{RefProp}}            &    0.077       &  0.026       &   0.010       & 2.67       &   24   &   2.4          &  2.34   & 4.593     & 0.075     &  0.869   &  1.050 &  0.991  \\
+\multicolumn{1}{l}{\textnormal{StanMix}}            &    0.075       &  0.025       &   0.009       & 2.66       &   27   &   2.7          &  2.49   & 4.344     & 0.071     &  0.873   &  1.051 &  0.991  \\
+\multicolumn{1}{l}{\textnormal{Deviation [\%]}}   &    -3.12       &  -3.97       &   -3.73       & -0.25       &   10.7   &   10.7          &  6.5   & -5.41     & -5.75     &  0.43   &  0.06 &  0.06  \\
+    \bottomrule
+
+    \end{tabular}
+\end{threeparttable}

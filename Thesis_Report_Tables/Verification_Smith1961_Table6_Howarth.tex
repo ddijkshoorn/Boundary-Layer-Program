@@ -1,0 +1,54 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Verification with Howarths Flow case with Table 6 from Smith\cite{smith1961solution}: incompressible adiabatic decelarating flow)
+\begin{threeparttable}
+    \centering
+    \caption{Comparison with tabulated data of nonsimilar Howarths Flow: incompressible adiabatic decelarating flow (adverse pressure gradient) taken from Smith\cite{smith1961solution} table 6. All values in compressible Falkner-Skan transformed $y$-coordinate. Grid used by the CS-method (CSM): uniform (vertical) grid spacing of $\mathrm{d} \eta = 0.0100$ and height of $\eta_{\mathrm{e}} = 9.0$. Note that separation occurred when the table entry shows 'sep'.}
+    \label{tab:CT6}
+    \begin{tabular}{S[table-format=1.4] S[table-format=1.6] S[table-format=1.5] S[table-format=1.5] S[table-format=1.6]}
+        \toprule
+
+        \multicolumn{1}{c}{$X$}                       &
+        \multicolumn{4}{c}{$f''(0)$}                  \\
+
+        \multicolumn{1}{c}{[-]}                       &
+        \multicolumn{4}{c}{[-]}                       \\
+        \cmidrule(lr){2-5}
+
+        \multicolumn{1}{c}{}                          &
+        \multicolumn{2}{c}{Douglas}                   &
+        \multicolumn{1}{c}{Hartree}                   &
+        \multicolumn{1}{c}{CSM}                       \\
+
+        \cmidrule(lr){2-3}
+
+        \multicolumn{1}{c}{}                          &
+        \multicolumn{1}{c}{$\epsilon = 0.000001$}   &
+        \multicolumn{1}{c}{$\epsilon = 0.00001$}    &
+        \multicolumn{1}{c}{}                          &
+        \multicolumn{1}{c}{$\epsilon = 0.00001$}                          \\
+        \midrule
+
+        % Data
+        0   &        &        &       &  0.332057   \\
+        0.0125   &   0.329792   &   0.32979   &       &   0.329637  \\
+        0.025   &   0.325728   &   0.32573   &       &   0.327199  \\
+        0.050   &   0.321842   &   0.32185   &       &   0.322270  \\
+        0.075   &   0.316907   &   0.31692   &       &   0.317267  \\
+        0.100   &   0.311959   &   0.31198   &       &   0.312188  \\
+        0.150   &   0.301611   &   0.30167   &       &   0.301786  \\
+        0.200   &   0.290908   &   0.29102   &       &   0.291045  \\
+        0.300   &   0.268281   &   0.26859   &       &   0.268417  \\
+        0.400   &   0.243918   &   0.24448   &  0.24406   &  0.244035   \\
+        0.600   &   0.188324   &   0.18943   &       &   0.188245  \\
+        0.800   &   0.116867   &   0.11860   &  0.1168   &  0.116523   \\
+        0.840   &   0.098627   &   0.10057   &  0.0979   &  0.098098   \\
+        0.880   &   0.077766   &   0.08002   &  0.0773   &  0.077081   \\
+        0.920   &   0.052064   &   0.05493   &  0.0508   &  0.051135   \\
+        0.948   &   0.026397   &   0.03070   &  0.0249   &  0.024884   \\
+        0.956   &   0.014267   &   0.02047   &  0.0114   &  0.011706   \\
+        0.958   &   0.009534   &   0.01718   &  0.0059   &  0.005566   \\
+        0.9589   &   0.006469   &   0.01549   &       &  \multicolumn{1}{c}{sep}  \\
+        \bottomrule
+
+    \end{tabular}
+\end{threeparttable}

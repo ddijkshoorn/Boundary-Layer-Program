@@ -1,0 +1,71 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Verification with Table C-25 from Rogers\cite{rogers1992laminar}: Pr=1, C=1 (constant)
+\begin{threeparttable}
+    \centering
+    \caption{Comparison with tabulated data of laminar compressible similar flows with constant nonzero pressure gradients and heat transfer for calorically perfect ideal gas with $C = 1$ (constant) and $\mathrm{Pr} = 1$ taken from Rogers\cite{rogers1992laminar} table C-25. The values obtained with the CS-method (CSM) are transformed from the compressible Falkner-Skan transformed y-coordinate with uniform (vertical) grid spacing of $\mathrm{d} \eta = \sqrt{\frac{2C}{m_2 + 1}} 0.0001$ and height of $\eta_{\mathrm{e}} = \sqrt{\frac{2C}{m_2 + 1}} 8.0$ to the Illingworth-Levy coordinates ($\mathrm{d} \eta = 0.0001$ and $\eta_{\mathrm{e}} = 8.0$). Note that separation occurred when the table entry shows 'sep'.}
+    \label{tab:C25}
+    \begin{tabular}{S[table-format=1.2] S[table-format=-1.6] S[table-format=4.6] S[table-format=1.6] S[table-format=1.6] S[table-format=-1.6] S[table-format=-1.6]}
+        \toprule
+
+        \multicolumn{1}{c}{$g_{\mathrm{w}}$}                      &
+        \multicolumn{1}{c}{$\hat{\beta}$}                         &
+        \multicolumn{1}{c}{$m_2$}                                 &
+        \multicolumn{2}{c}{$f''(0)$}                              &
+        \multicolumn{2}{c}{$g'(0)$}                               \\
+        \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+
+        \multicolumn{1}{c}{}                                      &
+        \multicolumn{1}{c}{}                                      &
+        \multicolumn{1}{c}{}                                      &
+        \multicolumn{1}{c}{\textbf{Rogers}}                       &
+        \multicolumn{1}{c}{\textbf{CSM}}                          &
+        \multicolumn{1}{c}{\textbf{Rogers}}                       &
+        \multicolumn{1}{c}{\textbf{CSM}}                          \\
+        \midrule
+
+        % Data
+         0       &   2.00       &   1000\tnote{*}          &  0.738646   &  0.738495   &  0.520637   &  0.520610  \\
+                  &   1.50       &   3.000000            &  0.698714   &  0.698708   &  0.514758   &  0.514749  \\
+                  &   1.00       &   1.000000            &  0.648858   &  0.648858   &  0.506661   &  0.506661  \\
+                  &   0.50       &   0.333333            &  0.581143   &  0.581143   &  0.494220   &  0.494220  \\
+                  &   0.10       &   0.052632            &  0.498666   &  0.498667   &  0.476549   &  0.476550  \\
+                  &   0       &   0.000000            &  0.469600   &  0.469603   &  0.469600   &  0.469603  \\
+                  &   -0.10       &   -0.047619            &  0.433977   &  0.434006   &  0.460534   &  0.460542  \\
+                  &   -0.20       &   -0.090909            &  0.387508   &  0.387552   &  0.447715   &  0.447740  \\
+                  &   -0.30       &   -0.130435            &  0.318261   &  \multicolumn{1}{c}{sep}   &  0.426305   &  \multicolumn{1}{c}{sep}  \\
+                  &   -0.326419       &   -0.140310            &  0   &  \multicolumn{1}{c}{sep}   &  0.247790   &  \multicolumn{1}{c}{sep}  \\
+         0.20       &   2.00       &   1000\tnote{*}          &  0.948323   &  0.948028   &  0.433374   &  0.433350  \\
+                  &   1.50       &   3.000000            &  0.869491   &  0.869488   &  0.426683   &  0.426678  \\
+                  &   1.00       &   1.000000            &  0.775537   &  0.775537   &  0.417547   &  0.417547  \\
+                  &   0.50       &   0.333333            &  0.654961   &  0.654961   &  0.403591   &  0.403591  \\
+                  &   0.10       &   0.052632            &  0.516777   &  0.516778   &  0.383665   &  0.383666  \\
+                  &   0       &   0.000000            &  0.469600   &  0.469603   &  0.375680   &  0.375682  \\
+                  &   -0.10       &   -0.047619            &  0.412212   &  0.412224   &  0.365003   &  0.365010  \\
+                  &   -0.20       &   -0.090909            &  0.336409   &  0.336484   &  0.349022   &  0.349055  \\
+                  &   -0.30       &   -0.130435            &  0.209010   &  \multicolumn{1}{c}{sep}   &  0.315893   &  \multicolumn{1}{c}{sep}  \\
+                  &   -0.308622       &   -0.133682            &  0   &  \multicolumn{1}{c}{sep}   &  0.226014   &  \multicolumn{1}{c}{sep}  \\
+         0.6       &   2.00       &   1000\tnote{*}          &  1.33335   &  1.332796   &  0.230628   &  0.230610  \\
+                  &   1.50       &   3.000000            &  1.18536   &  1.185355   &  0.225837   &  0.225835  \\
+                  &   1.00       &   1.000000            &  1.01219   &  1.012192   &  0.219273   &  0.219273  \\
+                  &   0.50       &   0.333333            &  0.795193   &  0.795193   &  0.209134   &  0.209134  \\
+                  &   0.10       &   0.052632            &  0.552320   &  0.552320   &  0.194163   &  0.194163  \\
+                  &   0       &   0.000000            &  0.469600   &  0.469603   &  0.187840   &  0.187841  \\
+                  &   -0.10       &   -0.047619            &  0.367041   &  0.367060   &  0.178822   &  0.178827  \\
+                  &   -0.20       &   -0.090909            &  0.218417   &  0.218692   &  0.162575   &  0.162629  \\
+                  &   -0.247561       &   -0.110147            &  0   &  \multicolumn{1}{c}{sep}   &  0.125095   &  \multicolumn{1}{c}{sep}  \\
+         \multicolumn{1}{l}{1.0} & \multicolumn{6}{l}{Solution to the Falkner-Skan equations, see Table \ref{tab:FSF}}   \\
+         2.0       &   2.00       &   1000\tnote{*}          &  2.48768   &  2.486378   &  -0.661455   &  -0.661388  \\
+                  &   1.50       &   3.000000            &  2.14034   &  2.140343   &  -0.642295   &  -0.642295  \\
+                  &   1.00       &   1.000000            &  1.73668   &  1.736684   &  -0.615585   &  -0.615585  \\
+                  &   0.50       &   0.333333            &  1.23481   &  1.234806   &  -0.572886   &  -0.572886  \\
+                  &   0.10       &   0.052632            &  0.670713   &  0.670713   &  -0.503755   &  -0.503756  \\
+                  &   0       &   0.000000            &  0.469600   &  0.469603   &  -0.469600   &  -0.469603  \\
+                  &   -0.10       &   -0.047619            &  0.181379   &  0.181483   &  -0.403222   &  -0.403295  \\
+                  &   -0.129507       &   -0.060815            &  0   &  0.003995   &  -0.338911   &  -0.340967  \\
+        \bottomrule
+
+    \end{tabular}
+    \begin{tablenotes}
+        \item[*] The solution does not converge for $m_2 = \infty$, and therefore $m_2 = 1000$ is taken as approach.
+    \end{tablenotes}
+\end{threeparttable}

@@ -1,0 +1,43 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Accuracy study with Table C-28 from Rogers\cite{rogers1992laminar}: nonzero pressure gradient adiaabtic flows with Pr=0.723, C=1 (constant), sigma=2.0 (Ma=inf)
+\begin{threeparttable}
+    \centering
+    \caption{Accuracy study with adiabatic laminar compressible similar flows with constant nonzero pressure gradients for calorically perfect ideal gas with $C = 1$ (constant) and $\mathrm{Pr} = 0.723$ and $\bar{\sigma} = 2.0 \quad (\mathrm{Ma} = \infty)$ based on tabulated data obtained from Rogers\cite{rogers1992laminar} table C-28 and the method following the example of Cebeci\cite{cebeci1974analysis} table 8-3. The convergence criterion used was $\left| \mathrm{d} f''(0) \right| < 1e-5$. The values obtained with the CS-method (CSM) are in transformed compressible Falkner-Skan coordinates with grid height of $\eta_{\mathrm{e}} = 8.0$. Note that separation occurred when the table entry shows 'sep'.}
+    \label{tab:C28Bcc_A}
+    \begin{tabular}{S[table-format=-1.6] S[table-format=-1.6e-1] S[table-format=1.6] S[table-format=1.6] S[table-format=-1.6] S[table-format=-1.6] S[table-format=1.6] S[table-format=-1.6] S[table-format=-1.6]}
+        \toprule
+
+        \multicolumn{1}{c}{$\hat{\beta}$}                	&
+        \multicolumn{1}{c}{$m_2$}                          	&
+        \multicolumn{7}{c}{$f''_{0}$}             	\\
+
+        \multicolumn{1}{c}{}                              	&
+        \multicolumn{1}{c}{}                             	&
+        \multicolumn{7}{c}{[-]}                              \\
+        \cmidrule(lr){3-9}
+
+        \multicolumn{1}{c}{}                                 &
+        \multicolumn{1}{c}{}                                 &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 1.0 $}      	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.5 $}      	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.2 $}       	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.1 $}       	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.01 $}       	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.001 $}       	&
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.0001 $}        \\
+        \midrule
+
+        % Data
+         1.00       &      2.499994e-06               &  \multicolumn{1}{c}{sep}   &  \multicolumn{1}{c}{sep}  &  \multicolumn{1}{c}{sep}  &  \multicolumn{1}{c}{sep}  &  \multicolumn{1}{c}{sep}  &  \multicolumn{1}{c}{sep}  &  \multicolumn{1}{c}{sep}  \\
+         0.50       &      1.249995e-06               &  0.614389   &  0.621157   &  0.623095   &  0.623373   &  0.623465   &  0.623466   &  0.623466  \\
+         0.10       &      2.499988e-07               &  0.403793   &  0.406173   &  0.406811   &  0.406901   &  0.406930   &  0.406930   &  0.406930  \\
+         0       &      0.000000e+00               &  0.330122   &  0.331604   &  0.331988   &  0.332041   &  0.332059   &  0.332059   &  0.332059  \\
+         -0.10       &      -2.499987e-07               &  0.236303   &  0.236982   &  0.237134   &  0.237154   &  0.237160   &  0.237160   &  0.237160  \\
+         -0.15       &      -3.749980e-07               &  0.174324   &  0.174542   &  0.174550   &  0.174549   &  0.174548   &  0.174548   &  0.174548  \\
+         -0.20       &      -4.999973e-07               &  0.084756   &  0.083560   &  0.083103   &  0.083033   &  0.083009   &  0.083009   &  0.083009  \\
+         -0.215957       &      -5.398895e-07               &  0.034723   &  0.029419   &  0.027409   &  0.027099   &  0.026996   &  0.026995   &  0.026995  \\
+         -0.216103       &      -5.402545e-07               &  0.034076   &  0.028635   &  0.026575   &  0.026255   &  0.026148   &  0.026147   &  0.026147  \\
+        \bottomrule
+
+    \end{tabular}
+\end{threeparttable}

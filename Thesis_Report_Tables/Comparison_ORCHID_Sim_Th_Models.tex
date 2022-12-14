@@ -1,0 +1,58 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Comparison of simulation results of the ORCHID nozzle with two different thermophysical models: RefProp and StanMix. Where StanMix is considered as a reference.
+%\begin{table}
+%\begin{sidewaystable}
+\begin{threeparttable}
+    \centering
+    \caption{Comparison of ORCHID simulations with two different thermodynamic models: boundary layer edge properties. Results calculated using StanMix and RefProp. StanMix utilizes the iPRSV, whereas RefProp utilizes unknow industrial standards? StanMix is used here as starting point for convenience, since the fluid property retrieval is much faster, whereas RefProp is thought to be more accurate. Note also that edge properties are the same for laminar or turbulent flow. Static pressure obtained from SU2 CFD simulation second-order convergence is used as input.}
+    \label{tab:cosep}
+    \begin{tabular}{l S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.2] S[table-format=-2.2] S[table-format=-2.2] S[table-format=-2.2] S[table-format=-2.2] S[table-format=-2.2] S[table-format=3.3] S[table-format=3.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3] S[table-format=-2.3]}
+        \toprule
+
+        \multicolumn{1}{c}{Boundary}                  &
+        \multicolumn{2}{c}{$P_{\mathrm{s,e}}$}                  &
+        \multicolumn{2}{c}{$\mathrm{Ma}_{\mathrm{e}}$}         &
+        \multicolumn{2}{c}{$Z_{\mathrm{e}}$}                    &
+        \multicolumn{2}{c}{$\mathrm{Pr}_{\mathrm{e}}$}         &
+        \multicolumn{2}{c}{$C_{\mathrm{p,e}}$}                  &
+        \multicolumn{2}{c}{$\mu_{\mathrm{e}}$}                 &
+        \multicolumn{2}{c}{$k_{\mathrm{e}}$}                    &
+        \multicolumn{2}{c}{$\mathrm{Re}_{\mathrm{e}}$}      \\
+        \multicolumn{1}{c}{layer edge}                  &
+        \multicolumn{2}{c}{$\times \, 10^5 \,$ [Pa]}                     &
+        \multicolumn{2}{c}{[-]}                                &
+        \multicolumn{2}{c}{[-]}                    &
+        \multicolumn{2}{c}{[-]}         &
+        \multicolumn{2}{c}{$\times \, 10^{3} \,$ [J/kg/K]}         &
+        \multicolumn{2}{c}{$\times \, 10^{-5} \,$ [kg/m/s]}                  &
+        \multicolumn{2}{c}{$\times \, 10^{-2} \,$ [W/m/K]}                 &
+        \multicolumn{2}{c}{$\times \, 10^7 \,$ [1/m]}                 \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15} \cmidrule(lr){16-17} \cmidrule(lr){18-19}
+
+        \multicolumn{1}{c}{properties}                  &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      &
+        \multicolumn{1}{c}{in}                                      &
+        \multicolumn{1}{c}{out}                                      \\
+        \midrule
+
+        % Data
+\multicolumn{1}{l}{\textnormal{RefProp}}            &    18.183       &  1.894       &   0.2       & 2.0       &   0.55          &  0.95   & 0.88          &  0.76   &  2.890 &  1.990  &  1.161  &  1.045  &  3.829  &  2.747 &  18  &  24  \\
+\multicolumn{1}{l}{\textnormal{StanMix}}            &    18.184       &  1.901       &   0.2       & 2.0       &   0.54          &  0.95   & 1.24          &  0.76   &  2.729 &  1.954  &  1.642  &  0.944  &  3.612  &  2.423 &  13  &  27  \\
+\multicolumn{1}{l}{\textnormal{Deviation [\%]}}   &    0.003       &  0.41       &   -0.03       & -0.14       &   -0.78          &  -0.18   & 41.58          &  0.59   &  -5.58 &  -1.80  &  41.45  &  -9.66  &  -5.67  &  -11.81 &  -29.0  &  10.7  \\
+        \bottomrule
+
+    \end{tabular}
+\end{threeparttable}

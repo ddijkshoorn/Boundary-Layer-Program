@@ -1,0 +1,65 @@
+%%%%% TABLE PRINTED BY MATLAB PROGRAM %%%%%
+%% Accuracy Study with Howarths Flow case with Table 6 from Smith\cite{Smith1961laminar}: incompressible adiabatic decelarating flow)
+%\begin{table}
+%\begin{sidewaystable}
+\begin{threeparttable}
+    \centering
+    \caption{Accuracy study with nonsimilar Howarth's Flow: incompressible adiabatic decelarating flow (adverse pressure gradient) following the example of Cebeci\cite{cebeci1974analysis} table 8-4. The convergence criterion used was $\left| \mathrm{d} f''(0) \right| < 1e-5$. The values obtained with the CS-method (CSM) are in transformed compressible Falkner-Skan coordinates with grid height of $\eta_{\mathrm{e}} = 9.0$.}
+    \label{tab:AccH3_A}
+    \begin{tabular}{S[table-format=1.4] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6] S[table-format=1.6]}
+        \toprule
+
+        \multicolumn{1}{c}{$X$}                       &
+        \multicolumn{7}{c}{$f''(0)$}                  \\
+
+        \multicolumn{1}{c}{[-]}                       &
+        \multicolumn{7}{c}{[-]}                       \\
+        \cmidrule(lr){2-8}
+
+        \multicolumn{1}{c}{}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 1.0 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.5 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.2 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.1 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.01 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.001 $}                         &
+        \multicolumn{1}{c}{$\mathrm{d} \eta = 0.0001 $}    \\
+
+        \multicolumn{1}{c}{}                         &
+        \multicolumn{1}{c}{$\mathrm{d} X$}                &
+        \multicolumn{1}{c}{$\mathrm{d} X /2 $}           &
+        \multicolumn{1}{c}{$\mathrm{d} X /4 $}           &
+        \multicolumn{1}{c}{$\mathrm{d} X /8 $}           &
+        \multicolumn{1}{c}{$\mathrm{d} X /16 $}           &
+        \multicolumn{1}{c}{$\mathrm{d} X /32 $}           &
+        \multicolumn{1}{c}{$\mathrm{d} X /64 $}           \\
+        \midrule
+
+        % Data
+        0   &  0.330121   &  0.331604   &  0.331986   &  0.332040   &  0.332057   &  0.332057   &  0.332057   \\
+        0.0125   &  0.327878   &  0.329231   &  0.329574   &  0.329622   &  0.329638   &  0.329638   &  0.329638   \\
+        0.025   &  0.325621   &  0.326842   &  0.327145   &  0.327187   &  0.327200   &  0.327201   &  0.327201   \\
+        0.050   &  0.321057   &  0.322011   &  0.322232   &  0.322262   &  0.322272   &  0.322272   &  0.322272   \\
+        0.075   &  0.316427   &  0.317107   &  0.317246   &  0.317264   &  0.317270   &  0.317270   &  0.317270   \\
+        0.100   &  0.311729   &  0.312130   &  0.312184   &  0.312189   &  0.312191   &  0.312191   &  0.312191   \\
+        0.150   &  0.302114   &  0.301941   &  0.301820   &  0.301800   &  0.301793   &  0.301793   &  0.301793   \\
+        0.200   &  0.292200   &  0.291423   &  0.291117   &  0.291070   &  0.291055   &  0.291055   &  0.291055   \\
+        0.300   &  0.271358   &  0.269286   &  0.268582   &  0.268477   &  0.268442   &  0.268441   &  0.268441   \\
+        0.400   &  0.249009   &  0.245463   &  0.244302   &  0.244131   &  0.244074   &  0.244073   &  0.244073   \\
+        0.600   &  0.198419   &  0.191113   &  0.188744   &  0.188393   &  0.188276   &  0.188275   &  0.188275   \\
+        0.800   &  0.135991   &  0.121994   &  0.117212   &  0.116479   &  0.116236   &  0.116232   &  0.116232   \\
+        0.840   &  0.121132   &  0.104822   &  0.099108   &  0.098228   &  0.097935   &  0.097931   &  0.097931   \\
+        0.880   &  0.105076   &  0.085611   &  0.078453   &  0.077329   &  0.076952   &  0.076948   &  0.076947   \\
+        0.920   &  0.087432   &  0.063138   &  0.053180   &  0.051517   &  0.050951   &  0.050945   &  0.050944   \\
+        0.948   &  0.073784   &  0.043792   &  0.028576   &  0.025471   &  0.024338   &  0.024324   &  0.024323   \\
+        0.956   &  0.069628   &  0.037241   &  0.018112   &  0.012957   &  0.010652   &  0.010621   &  0.010620   \\
+        0.958   &  0.068569   &  0.035493   &  0.014744   &  0.007909   &  0.003203   &  0.003104   &  0.003099   \\
+        0.9589   &  0.068089   &  0.034689   &  0.013034   &  0.000000   &   \multicolumn{1}{c}{sep}    &   \multicolumn{1}{c}{sep}    &   \multicolumn{1}{c}{sep}    \\
+        \addlinespace
+        \multicolumn{1}{c}{$n_{\mathrm{\eta}_{\mathrm{points}}}$}   &   \multicolumn{1}{c}{10}   &   \multicolumn{1}{c}{19}   &   \multicolumn{1}{c}{46}   &   \multicolumn{1}{c}{91}   &   \multicolumn{1}{c}{901}   &   \multicolumn{1}{c}{9001}   &   \multicolumn{1}{c}{90001}   \\
+        \multicolumn{1}{c}{$n_{\mathrm{X}_{\mathrm{stations}}}$}   &   \multicolumn{1}{c}{19}   &   \multicolumn{1}{c}{37}   &   \multicolumn{1}{c}{73}   &   \multicolumn{1}{c}{145}   &   \multicolumn{1}{c}{289}   &   \multicolumn{1}{c}{577}   &   \multicolumn{1}{c}{1153}   \\
+        \bottomrule
+
+    \end{tabular}
+\end{threeparttable}
+%\end{sidewaystable}
