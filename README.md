@@ -2,7 +2,7 @@
 
 ## Computer Program for the Simulation of Two-dimensional Steady State Boundary Layers in Non-ideal Gas Flows
 
-Dominic Dyon Dijkshoorn, 14-12-2022
+*Dominic Dyon Dijkshoorn, 14-12-2022*
 
 This MATLAB computer program solves the two-dimensional steady state boundary layer equations with general fluid properties for compressible flows in the ideal gas or non-ideal gas (departing from ideal gas) regime, adiabatic or including heat transfer for laminar and/or turbulent (algebraic CS-model) flows. The computer program was verified and validated for air, and needs validation for flows departing from ideal gas.
 
@@ -20,6 +20,8 @@ Open and run the MAIN-file in the main folder. Graphs will be generated to prese
 
 NB for the non-ideal gas simulations the licensed program FluidProp [5] is required to run the simulations. After having acquired FluidProp, copy the following files to the MAIN-folder: ‘InitFluidProp.m’ and ‘Cleanup_FluidProp.m’. 
 
+
+*Table 1: List of structures and variables used in the MATLAB program.*
 | Structure   | Variable           | Description                                      |
 | :---        | :---               | :---                                             |
 | BLC         | BL Characteristics | Contains all (calculated Boundary Layer Characteristics (properties) |
@@ -35,9 +37,6 @@ NB for the non-ideal gas simulations the licensed program FluidProp [5] is requi
 | SET         | SETtings           | Contains all numerical settings                  |
 | SOL         | SOLution           | Contains all SOLution parameters after the calculation |
 | TCC         | Turbulent CharaCteristics | Contains all parameters (constants) involved in the algebraic turbulence model |
-
-
-
 
 ## References
 
