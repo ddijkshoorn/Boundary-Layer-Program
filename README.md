@@ -21,7 +21,7 @@ Open and run the MAIN-file in the main folder. Graphs will be generated to prese
 NB for the non-ideal gas simulations the licensed program FluidProp [5] is required to run the simulations. After having acquired FluidProp, copy the following files to the MAIN-folder: ‘InitFluidProp.m’ and ‘Cleanup_FluidProp.m’. 
 
 
-*Table 1: List of structures and variables used in the MATLAB program.*
+*Table 1: List of structures and variables used in the MATLAB program. NB The calculation method of the most important boundary layer characteristics has been kept the same for the purpose of verification with the FORTRAN program.*
 | Structure   | Variable           | Description                                                                                                |
 | :---        | :---               | :---                                                                                                       |
 | BLC         |                    | BL Characteristics: contains all (calculated Boundary Layer Characteristics (properties)                   |
@@ -29,6 +29,12 @@ NB for the non-ideal gas simulations the licensed program FluidProp [5] is requi
 | FLP         |                    | FLuid Properties: contains all FLuid Properties inside the BL                                              |
 | FRS         |                    | FRee Stream: contains all FRee Stream properties (outside BL)                                              |
 | GRD         |                    | GRiD: contains all GRiD properties                                                                         |
+|             | etaE               | Maximum grid height (grid height at BL Edge)                                                               |
+|             | VGP                | Variable Grid Parameter: multiplication factor which determines the grid spacing                           |
+|             | Deta               | Differences between the eta-grid points (vertical grid): all differences in vector form                    |
+|             | NP                 | Number of grid-Points in vertical direction                                                                |
+|             | eta                | The eta-grid (vector)                                                                                      |
+|             | A                  | Help variable in solution method                                                                           |
 | HVR         |                    | Help VaRiables: contains all property derived variables for solving the set of differential equations      |
 | INP         |                    | INPut: contains all standard and case specific INPut properties                                            |
 | MON         |                    | MONitor: contains all variables that count or monitor the numerical process properties                     |
