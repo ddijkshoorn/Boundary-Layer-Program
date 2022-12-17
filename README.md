@@ -22,21 +22,21 @@ NB for the non-ideal gas simulations the licensed program FluidProp [5] is requi
 
 
 *Table 1: List of structures and variables used in the MATLAB program.*
-| Structure   | Variable           | Description                                      |
-| :---        | :---               | :---                                             |
-| BLC         | BL Characteristics | Contains all (calculated Boundary Layer Characteristics (properties) |
-| EDG         | BL edge            | Contains all Boundary Layer Edge properties      |
-| FLP         | FLuid Properties   | Contains all FLuid Properties inside the BL      |
-| FRS         | FRee Stream        | Contains all FRee Stream properties (outside BL) |
-| GRD         | GRiD               | Contains all GRiD properties                     |
-| HVR         | Help VaRiables     | Contains all property derived variables for solving the set of differential equations |
-| INP         | INPut              | Contains all standard and case specific INPut properties |
-| MON         | MONitor            | Contains all variables that count or monitor the numerical process properties |
-| OPT         | OPTions            | Contains all OPTions defining the case           |
-| PLT         | PLoT               | Contains all PLoTting parameters                 |
-| SET         | SETtings           | Contains all numerical settings                  |
-| SOL         | SOLution           | Contains all SOLution parameters after the calculation |
-| TCC         | Turbulent CharaCteristics | Contains all parameters (constants) involved in the algebraic turbulence model |
+| Structure   | Variable           | Description                                                                                                |
+| :---        | :---               | :---                                                                                                       |
+| BLC         |                    | BL Characteristics: contains all (calculated Boundary Layer Characteristics (properties)                   |
+| EDG         |                    | BL edge: contains all Boundary Layer Edge properties                                                       |
+| FLP         |                    | FLuid Properties: contains all FLuid Properties inside the BL                                              |
+| FRS         |                    | FRee Stream: contains all FRee Stream properties (outside BL)                                              |
+| GRD         |                    | GRiD: contains all GRiD properties                                                                         |
+| HVR         |                    | Help VaRiables: contains all property derived variables for solving the set of differential equations      |
+| INP         |                    | INPut: contains all standard and case specific INPut properties                                            |
+| MON         |                    | MONitor: contains all variables that count or monitor the numerical process properties                     |
+| OPT         |                    | OPTions: contains all OPTions defining the case                                                            |
+| PLT         |                    | PLoT: contains all PLoTting parameters                                                                     |
+| SET         |                    | SETtings: contains all numerical settings                                                                  |
+| SOL         |                    | SOLution: contains all SOLution parameters after the calculation                                           |
+| TCC         |                    | Turbulent CharaCteristics: contains all parameters (constants) involved in the algebraic turbulence model  |
 
 ## References
 
