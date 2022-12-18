@@ -79,13 +79,13 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 |             | rhoE               | Static density at BL Edge                                                                                  |
 |             | Re_x               | Reynolds-number along BL Edge                                                                              |
 | FLP         |                    | FLuid Properties: contains all FLuid Properties inside the BL                                              |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
-|             |                 |                                                                                |
+|             | gamma              |                                                                                |
+|             | Cp                 |                                                                                |
+|             | T                  |                                                                                |
+|             | mu                 |                                                                                |
+|             | C                  |                                                                                |
+|             | Pr                 |                                                                                |
+|             | k                  |                                                                                |
 | FRS         |                    | FRee Stream Initial conditions: contains all FRee Stream properties (outside BL) at the start              |
 |             | PsI                | Initial Static Pressure                                                                                    |
 |             | TsI                | Initial Static Temperature                                                                                 |
