@@ -35,7 +35,7 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 
 ## Table
 
-*Table 1: List of structures and variables used in the MATLAB program. NB The calculation method of the most important boundary layer characteristics has been kept the same for the purpose of verification with the FORTRAN program. All variables include comments in code.*
+*Table 1: List of structures and variables used in the MATLAB program. NB The calculation method of the most important boundary layer characteristics has been kept the same for the purpose of verification with the FORTRAN program. All variables include sufficient explanatory comments in code.*
 | Structure   | Variable           | Description                                                                                                |
 | :---        | :---               | :---                                                                                                       |
 | General Variables in Workspace | X            | Wall surface coordinate                                                                       |
