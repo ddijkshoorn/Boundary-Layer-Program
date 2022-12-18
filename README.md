@@ -38,6 +38,11 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 *Table 1: List of structures and variables used in the MATLAB program. NB The calculation method of the most important boundary layer characteristics has been kept the same for the purpose of verification with the FORTRAN program. All variables include comments in code.*
 | Structure   | Variable           | Description                                                                                                |
 | :---        | :---               | :---                                                                                                       |
+| General Variables in Workspace | X            | Wall surface coordinate                                                                       |
+|                   | NS           | Current Station NS                                                                                         |
+|                   | NST          | Total Number of STations                                                                                   |
+|                   | NP           | Current number of eta-grid points (vertical grid)                                                          |
+|                   | Case_name    | Name of specific case run, which is given in case-specific INPUT-file                                      |
 | BLC         |                    | BL Characteristics: contains all calculated Boundary Layer Characteristics (properties, vector or matrix)  |
 |             | edge               | BL Edge location\height (vector)                                                                           |
 |             | delta              | BL velocity thickness                                                                                      |
@@ -57,11 +62,21 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 |             | Ec_x               | Eckert-number                                                                                              |
 |             | Br_x               | Brinkman-number                                                                                            | 
 |             | Cd                 | Denton's loss coefficient                                                                                  |
-|             |                | 
-|             |                | 
-|             |                | 
-|             |                | 
-|             |                | 
+|             | tau                | Shear inside the BL                                                                                        |
+|             | tau_wall           | Wall shear                                                                                                 |
+|             | u_tau              | Shear velocity                                                                                             |
+|             | Sa                 | Entropy generation rate per surface area                                                                   |
+|             | S_cum              | Cumulative entropy produced inside BL                                                                      |
+|             | Beta               | Pressure gradient parameter (old literature)                                                               |
+|             | Lambda             | Pohlhausen pressure gradient parameter (old literature)                                                    |
+|             | y                  | *y*-coordinate [m], obtained from transformed eta-coordinate by integration                                |
+|             | y_plus             | Dimensionless wall coordinates (law of the wall)                                                           |
+|             | u_plus             | Dimensionless wall coordinates (law of the wall)                                                           |
+|             | g_aw               | Wall Enthalpy ratio (Boundary Condition)                                                                   |
+|             | H_aw               | Wall Enthalpy                                                                                              |
+|             | T_aw               | Wall Temperature                                                                                           |
+|             | Trecovery          | Recovery Temperature (at wall)                                                                             |
+|             | Hrecovery          | Recovery Enthalpy (at wall)                                                                                |
 | EDG         |                    | BL edge: contains all Boundary Layer Edge properties (every varibale is a vector with values along entire BL Edge) |
 |             | HtE                | Total Enthalpy at BL Edge                                                                                  |
 |             | TtE                | Total Temperature BL Edge                                                                                  |
@@ -72,25 +87,25 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 |             | HsE                | Static Enthalpy at BL Edge                                                                                 |
 |             | muE                | Viscosity at BL Edge                                                                                       |
 |             | kE                 | Conductivity at BL Edge                                                                                    |
-|             | gammaE             | gamma at BL Edge                                                                                           |
+|             | gammaE             | Specific heat ratio gamma at BL Edge                                                                       |
 |             | aE                 | Speed of sound (SoS) at BL Edge                                                                            |
 |             | MaE                | Mach-number at BL Edge                                                                                     |
 |             | PsE                | Static Pressure at BL Edge                                                                                 |
 |             | rhoE               | Static density at BL Edge                                                                                  |
 |             | Re_x               | Reynolds-number along BL Edge                                                                              |
 | FLP         |                    | FLuid Properties: contains all FLuid Properties inside the BL                                              |
-|             | gamma              |                                                                                |
-|             | Cp                 |                                                                                |
-|             | T                  |                                                                                |
-|             | mu                 |                                                                                |
-|             | C                  |                                                                                |
-|             | Pr                 |                                                                                |
-|             | k                  |                                                                                |
+|             | gamma              | Specific heat ratio inside BL                                                                              |
+|             | Cp                 | Specific heat constant at constant pressure                                                                |
+|             | T                  | Static Temperature inside the Boundary Layer                                                               |
+|             | mu                 | Viscosity (static) inside the Boundary Layer                                                               |
+|             | C                  | Chapman-Rubesin parameter inside the Boundary Layer                                                        |
+|             | Pr                 | Prandtl-number inside the BL                                                                               |
+|             | k                  | Thermal conductivity inside the BL                                                                         |
 | FRS         |                    | FRee Stream Initial conditions: contains all FRee Stream properties (outside BL) at the start              |
 |             | PsI                | Initial Static Pressure                                                                                    |
 |             | TsI                | Initial Static Temperature                                                                                 |
 |             | UI                 | Initial flow velocity                                                                                      |
-|             | gammaI             | gamma for above flow conditions                                                                            |
+|             | gammaI             | Specific heat ratio gamma for above flow conditions                                                        |
 |             | CpI                | Cp for above flow conditions                                                                               |
 |             | HsI                | Initial static enthalpy                                                                                    |
 |             | MaI                | Initial Mach-number                                                                                        |
@@ -116,13 +131,13 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 | HVR         |                    | Help VaRiables: contains all property derived variables for solving the set of differential equations      |
 |             | P1                 | Pressure Gradient Parameter m1                                                                             |
 |             | P2                 | Pressure Gradient Parameter m2                                                                             |
-|             | CEL                | Help variable representing dimensionless *X*-coordinate for solver                                           |
+|             | CEL                | Help variable representing dimensionless *X*-coordinate for solver                                         |
 |             | P1P                | Pressure Gradient Parameter adjusted with CEL to solver coefficient                                        |
 |             | P2P                | Pressure Gradient Parameter adjusted with CEL to solver coefficient                                        |
 |             | alpha0             | Solver coefficient determining adiabatic or heat transfer (0 or 1)                                         |
 |             | alpha1             | Solver coefficient determining adiabatic or heat transfer (0 or 1)                                         |
 |             | WW                 | Boundary condition solver input                                                                            |
-| INP         |                    | INPut: contains all standard and case specific INPut properties; combination dependent on sepcific case: 3 initial free stream conditions properties (flat plate flow or stagnation point flow) and 1 EDG input variable |
+| INP         |                    | INPut: contains all standard and case specific INPut properties; combination dependent on sepcific case: 3 initial free stream conditions properties (flat plate flow or stagnation point flow) and 1 EDG input variable                                                       |
 |             | x                  | Dimensionless *x*-coordinate of surface geometry                                                           |
 |             | y                  | Dimensionless *y*-coordinate of surface geometry                                                           |
 |             | L                  | Scale factor (not used, equal to 1) for scaling *x* and *y*                                                |
