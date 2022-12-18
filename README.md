@@ -38,7 +38,7 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 *Table 1: List of structures and variables used in the MATLAB program. NB The calculation method of the most important boundary layer characteristics has been kept the same for the purpose of verification with the FORTRAN program. All variables include comments in code.*
 | Structure   | Variable           | Description                                                                                                |
 | :---        | :---               | :---                                                                                                       |
-| BLC         |                    | BL Characteristics: contains all (calculated Boundary Layer Characteristics (properties, vector or matrix) |
+| BLC         |                    | BL Characteristics: contains all calculated Boundary Layer Characteristics (properties, vector or matrix)  |
 |             | edge               | BL Edge location\height (vector)                                                                           |
 |             | delta              | BL velocity thickness                                                                                      |
 |             | delta_ast          | BL displacement thickness                                                                                  |
@@ -132,8 +132,29 @@ https://repository.tudelft.nl/islandora/object/uuid%3A433d4c00-e063-4614-9c78-28
 |             | uE                 | BL Edge velocity (vector)                                                                                  |
 |             | BCW                | Boundary Condition Wall                                                                                    |
 | MON         |                    | MONitor: contains all variables that count or monitor the numerical process properties                     |
-|             |                    |
-| OPT         |                    | OPTions: contains all OPTions defining the case                                                            |
+|             | ITE                | Number of ITErations per station                                                                           |
+|             | MGE                | Total number of Mesh Grid Extensions per station                                                           |
+|             | NST                | Total Number of STations                                                                                   |
+|             | NP                 | Amount of vertical grid points per station (vector); this number grows with mesh grid extensions           |
+|             | SEP                | SEParation has taken place yes/no                                                                          |
+|             | STR                | Station at which Separation has taken place                                                                |
+|             | NTR                | StatioN at which TRansition has taken place                                                                |
+|             | Re_tr              | Reynolds-number at station where transition took place                                                     |
+|             | tr                 | Transition (tr) has taken place yes/no                                                                     |
+|             | tr_last_check      | Station at which last transition check took place                                                          |
+|             | rl                 | Re-laminarisation (rl) has taken place yes/no                                                              |
+|             | rl_last_check      | Station at which last re-laminarisation check took place                                                   |
+| OPT         |                    | OPTions: contains all input OPTions available defining the case; see INPUT-file for a detailed explanation |
+|             | GASM               | Gas model: calorically perfect IG; Thermally perfect IG; or, Nonideal Gas                                  |
+|             | COMP               | Compressible or incompressible flow                                                                        |
+|             | CPRN               | Constant or variable Prandtl-number                                                                        |
+|             | CCRP               | Constant or variable/general Chapman-Rubesin parameter                                                     |
+|             | CPRT               | Constant or variable turbulent Pr-number                                                                   |
+|             | BCIE               | Boundary Condition Input Boundary Layer Edge (BL Edge input options: 1=uE (UE/UI); 2=MaE; 3=psE (PsE/PtI)) |
+|             | BCEE               | Wall Boundary Condition Energy Equation: adiabatic wall or heat transfer                                   |
+|             | TRME               | Transition method: no transition; prescribed transition location NTR; Wazzan's method; Michel's method; or, fully turbulent    |
+|             | RLAM               | Re-laminarization method, no relam.; prescribed location NRL; or, simple engineering estimate based on exp. data for air only! |
+|             | GRAD               | Method to calculate derivative of a vector variable (Lagrange; Weighted-difference technique; or, SPLINE methods)              |
 | PLT         |                    | PLoT: contains all PLoTting parameters of what to plot                                                     |
 | SET         |                    | SETtings: contains all numerical settings; see INPUT-file for a detailed explanation                       |
 |             | NPT                | Maximum number of grid-points (stations) in *X*-direction                                                  |
